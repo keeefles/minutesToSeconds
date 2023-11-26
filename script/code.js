@@ -1,11 +1,6 @@
-const btnSubmit =
-document.getElementById('btnSubmit')
-btnSubmit.addEventListener('click', minutesToSeconds)
+document.getElementById('btnSubmit').addEventListener('click', function(){
 
-let input = document.getElementById('input1');
+    let input = document.querySelector('[data-input]').value;
+    let seconds = input * 60; document.querySelector('[data-output]').textContent = seconds;
 
-function minutesToSeconds(){
-    let minutes = document.querySelector('[data-input]');
-    let seconds = document.querySelector('[data-output]')
-}
-
+});
